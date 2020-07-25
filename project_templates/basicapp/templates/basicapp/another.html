@@ -1,0 +1,14 @@
+{% extends "basicapp/index.html" %}
+
+{% load cut_extra %}
+
+
+
+{% block content %}
+
+<h1>This is the another file.</h1>
+{{ name | cut:"this" }}
+<br>
+{{ number | add:'99' }}
+
+{% endblock %}
